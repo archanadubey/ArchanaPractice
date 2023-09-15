@@ -1,0 +1,83 @@
+package recursionstring;
+
+import java.util.Scanner;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+	
+		String str = "123456789";
+		
+		//char [] charArray = str.toCharArray();
+		
+		//String output=StringReverseRecursion(str);
+		//System.out.println(output);
+		
+		
+		
+		// PROGRAMME TO PRINT ALL NATURAL NUMBER USING RECURSSION
+		
+		System.out.println("Enter any Natural Number");
+		
+		Scanner obj = new Scanner(System.in);
+		int num = obj.nextInt();
+
+		print(num);
+	//	System.out.println("Given Natural Number: " + naturalNumber);
+		
+		int n =15;
+		loopPrint(n);
+	}
+
+	
+	
+	
+	
+	 static String StringReverseRecursion(String str) {
+		
+		 
+		 if(str.isEmpty()) 
+			 
+			 return str;
+			
+		 
+		 
+		return StringReverseRecursion(str.substring(1));//+ str.charAt(0);
+	
+		
+	}
+	 
+	 // method to print sum of n natural number using recursion 
+	 
+	 static void print(int number) {
+		 
+		 if (number>=1) {
+			 
+			 print(number-1);
+			 
+			 System.out.print(number+ " ");
+		
+			
+		
+		 } 
+	 }
+	 
+	 
+	 //  method to print sum of n natural number using Iteration
+	 
+	 static void loopPrint(int n) {
+		 int sum =0;
+		
+		 for (int i= n; i>=1;i--) {
+			
+			 System.out.println(n +" "); 
+			 
+			 sum = sum +i;
+			 
+		 }
+		 
+		 System.out.println(" Sum of N natural number "+sum);
+		 
+	 }
+
+}

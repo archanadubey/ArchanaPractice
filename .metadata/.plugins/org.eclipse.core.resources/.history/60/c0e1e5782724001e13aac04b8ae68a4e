@@ -1,0 +1,24 @@
+package recursion;
+// Write a recursive function to calculate the factorial of a given number.
+public class RecursionFactorial {
+
+	public static void main(String[] args) {
+		System.out.println("Hellow");
+		
+		//using for loop 
+		
+		int fact = 1;
+		int num = 5;
+		
+		for (int i = 5; i>=1; i--) {
+			
+		fact = fact*i;
+		System.out.println("i"+i);
+			
+		}
+		
+		System.out.println("Factorial is :" + fact);
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package recursionstring;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+	
+		String str = "abcd";
+		//char [] charArray = str.toCharArray();
+		
+		StringReverseRecursion(str);
+		
+
+	}
+
+	 static String StringReverseRecursion(String str) {
+		
+		 
+		 if(str.isEmpty()) {
+			 
+			 return null;
+			
+		 }
+		 
+		return StringReverseRecursion(str.substring(1) + str.charAt(0));
+	
+		
+	}
+
+}

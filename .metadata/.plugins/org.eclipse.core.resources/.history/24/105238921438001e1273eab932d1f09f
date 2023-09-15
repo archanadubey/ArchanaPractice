@@ -1,0 +1,26 @@
+package recursionstring;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+	
+		String str = "abcd";
+		
+		StringReverseRecursion(str);
+		
+
+	}
+
+	 static void StringReverseRecursion(String str) {
+		 
+		 String  strLength = str.length();
+		 
+		 if(strLength.equal(null)) {
+			 return null;
+			 
+		 }
+	
+		
+	}
+
+}

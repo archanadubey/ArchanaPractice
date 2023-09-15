@@ -1,0 +1,14 @@
+package com.example.SampleServive;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SampleServiveApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SampleServiveApplication.class, args);
+		System.out.println("Hellow");
+	}
+
+}

@@ -1,0 +1,30 @@
+package recursionstring;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+	
+		String str = "Archana";
+		//char [] charArray = str.toCharArray();
+		
+		String output=StringReverseRecursion(str);
+		System.out.println(output);
+		
+
+	}
+
+	 static String StringReverseRecursion(String str) {
+		
+		 
+		 if(str.isEmpty()) 
+			 
+			 return str;
+			
+		 
+		 
+		return StringReverseRecursion(str.substring(1))+ str.charAt(0);
+	
+		
+	}
+
+}

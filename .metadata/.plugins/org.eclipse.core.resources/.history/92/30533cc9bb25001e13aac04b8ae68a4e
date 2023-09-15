@@ -1,0 +1,89 @@
+package recursion;
+// Write a recursive function to calculate the factorial of a given number.
+
+public class RecursionFactorial {
+
+	public static void main(String[] args) {
+		 int num = 5;
+		int n =recursiveFact(num);
+		System.out.println("factorial using recursion "+n);
+		
+		// fabonacciSeries
+		int fn=10;
+		fabonacciSeries(fn);
+		
+		// fabonnaciSeries using recursion 
+		int rn = fabonaaciSeriesRecursion(fn );
+		System.out.println("fabonaaciSeriesRecursion : "+ rn);
+		
+		//using for loop 
+		
+		int fact = 1;				
+		for (int i = num; i>=1; i--) {
+		
+	fact = fact*i;
+			
+		}
+		
+	System.out.println("Factorial using loop is :" + fact);
+		 
+	}	
+	// using recursion 
+	
+	static int recursiveFact(int n ) {
+			
+		if(n==0) {
+				return 1;
+			}else
+			
+			return n*recursiveFact(n-1 );
+		}
+	
+	// Write a recursive function to generate the nth Fibonacci number.
+	
+	// 5 fabinacci series 
+	
+	static void fabonacciSeries(int n) {
+
+		
+		int	a=0,b=1,sum=0;
+
+		for (int i = 0; i <n; ++i) {
+			System.out.print(a+" ,");
+			 sum =a+b;
+			 a=b;
+			 b=sum;
+			
+		}
+		
+		System.out.println("10th fabonacci series: "+sum);
+		
+		
+	}
+
+	
+	static int fabonaaciSeriesRecursion(int n ) {
+		
+		if (n == 0) {
+			return 0;
+			
+			
+		}else
+			
+			if (n == 1) {
+				return 1;
+				
+				
+			}else
+			
+			System.out.print(fabonaaciSeriesRecursion(n-1 ) + fabonaaciSeriesRecursion(n-2 )+" , ");
+		return fabonaaciSeriesRecursion(n-1 ) + fabonaaciSeriesRecursion(n-2 );
+		
+		
+		
+	}
+
+	}
+	
+
+

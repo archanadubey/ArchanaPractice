@@ -1,0 +1,28 @@
+package recursionstring;
+
+public class FnDeclaration {
+	
+	
+	// Write a program to get the prime number of given number using recursion
+	
+	 boolean isPrime(int n , int i) {
+		 
+		 if (n == 1)
+			 
+			 return false;
+		 else	 
+			 if (n%i == 0) {
+				 
+				 return false;
+			 } 
+				 return isPrime(n ,--i);
+				 
+}
+	 
+	// write a programme to find the sum of the 
+	
+	
+	
+	
+
+}

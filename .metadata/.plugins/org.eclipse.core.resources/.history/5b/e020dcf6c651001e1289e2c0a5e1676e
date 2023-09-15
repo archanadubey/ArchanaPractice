@@ -1,0 +1,16 @@
+package recursionstring;
+
+public class FnDeclaration {
+	
+	
+	// Write a program to get the prime number of given number using recursion
+	
+	 int isPrime(int n , int i) {
+		return n;
+	}
+	
+	
+	
+	
+
+}
