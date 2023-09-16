@@ -14,14 +14,17 @@ public class StringReverse {
 		
 		
 		System.out.println((prime.isPrime(pint, i)?"yes ":"no " +pint)) ;
-			
-			
+// call to program sum of digit of a positive given number
+		int number = -123;
+		System.out.println("Sum of digit of a given number: "+FnDeclaration.sumDigit(number));
 		
 		
 		
 		
 		
-	
+		
+		
+		
 		String str = "123456789";
 		
 		//char [] charArray = str.toCharArray();

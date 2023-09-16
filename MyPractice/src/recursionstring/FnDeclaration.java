@@ -19,7 +19,21 @@ public class FnDeclaration {
 				 
 }
 	 
-	// write a programme to find the sum of the 
+	// write a program to find the sum of the digit of a given number
+	 
+	static int sumDigit(int num) {
+		 if(num>=1 && num <=9)
+			 return num;
+		 else 
+			 if(num <=0)
+			 
+			return num%10-sumDigit(- num/10);
+			 else 
+				 return num%10 + sumDigit(num/10);
+		 
+		 
+	 }
+	 
 	
 	
 	
