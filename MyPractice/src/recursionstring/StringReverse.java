@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class StringReverse {
 
 	public static void main(String[] args) {
+		
 		FnDeclaration prime = new FnDeclaration();
 		
 		// function call of all numbers 
@@ -14,11 +15,24 @@ public class StringReverse {
 		
 		
 		System.out.println((prime.isPrime(pint, i)?"yes ":"no " +pint)) ;
+ 
 // call to program sum of digit of a positive given number
+		 
 		int number = -123;
 		System.out.println("Sum of digit of a given number: "+FnDeclaration.sumDigit(number));
 		
 		
+	// calculate the reverse of a given number
+		
+		System.out.println("Enter the number to reverse: ");
+		Scanner sc = new Scanner(System.in);
+		String revNumber = sc.nextLine();
+		int len = revNumber.length();
+		int revNum = Integer.parseInt(revNumber);
+		
+		FnDeclaration revP = new FnDeclaration();
+		
+		System.out.println("reversed Number: "+revP.reverseNumber(revNum,len));
 		
 		
 		

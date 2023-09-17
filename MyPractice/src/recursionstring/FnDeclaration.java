@@ -34,6 +34,16 @@ public class FnDeclaration {
 		 
 	 }
 	 
+	int reverseNumber(int n, int len) {
+		
+		if (n==0) {
+			return 0;
+		}
+		else
+			
+		return  ((n%10)*(int)Math.pow(10,len-1))+reverseNumber(n/10,--len);
+		
+	}
 	
 	
 	
