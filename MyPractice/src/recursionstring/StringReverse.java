@@ -35,7 +35,9 @@ public class StringReverse {
 		System.out.println("reversed Number: "+revP.reverseNumber(revNum,len));
 		
 		
-		
+	// calculate the count of the given number 
+		 countDigit(number);
+			
 		
 		
 		
