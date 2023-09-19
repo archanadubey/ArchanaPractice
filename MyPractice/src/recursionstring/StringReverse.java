@@ -36,7 +36,15 @@ public class StringReverse {
 		
 		
 	// calculate the count of the given number 
-		 countDigit(number);
+		FnDeclaration countDig= new FnDeclaration();
+		int countNum = 2356786;
+		int countNumber =  countDig.countDigit(countNum);
+		System.out.println("Number of digit counted:"+ countNumber);
+		
+		
+			 
+		
+
 			
 		
 		

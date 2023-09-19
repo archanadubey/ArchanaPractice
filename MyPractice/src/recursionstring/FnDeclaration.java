@@ -45,8 +45,20 @@ public class FnDeclaration {
 		
 	}
 	
+	//count the number of digit present in the number
+	int count = 0;
+	int countDigit(int number) {
+		
+			
+			if (number != 0) {
+				count++;
+			countDigit(number/10);
+			}	
+		
+		return (count!=0)?count:1;
+		
 	
 	
-	
+	}
 
 }
