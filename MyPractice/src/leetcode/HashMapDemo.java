@@ -34,6 +34,19 @@ public class HashMapDemo {
 	
 	System.out.println("India polulation: "+population);
 	
+	// checking if key exists
+	if(!map.containsKey("India")) 
+			System.out.println("India is not present in the map");
+		
+		else 
+			System.out.println("India is present in the map");
+	
+	String name = "Archana";
+	if (map.containsKey(name))
+		System.out.println("name is present in the map");
+	else
+		System.out.println("name is not present");
+	
 	}
 
 }
