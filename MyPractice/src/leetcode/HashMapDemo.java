@@ -46,6 +46,51 @@ public class HashMapDemo {
 		System.out.println("name is present in the map");
 	else
 		System.out.println("name is not present");
+	System.out.println();
+	
+	// removing key-value pair from HashMap
+	String country1 = "Nepal";
+	map.remove(country1);
+	System.out.println(map);
+	// update the map
+	map.put("USA", 70);
+	System.out.println(map);
+	int size = map.size();
+	System.out.println("Size of the  "+size);
+	//copy the hashmap
+	/* to copy a hash map we need to create another enpty hashmap and pass the original one as its parameter eg: */
+	
+	HashMap<String, Integer> copied = new HashMap<String,Integer>(map);
+	System.out.println("copied hashmap: "+ copied);
+	
+	
+	//checking if the map isEmpty
+	HashMap<String, Integer> checking = new HashMap();
+	boolean isEmpty1 = checking.isEmpty();
+	boolean isEmpty = copied.isEmpty();
+	System.out.println(isEmpty);
+	System.out.println(isEmpty1);
+	
+	
+	//merging the hashmap 
+	/* To merge the hashmap we need two hashmap and use the putAll method .*/
+	HashMap<String, Integer> merge = new HashMap<>();
+	merge.put("paris", 78);
+	merge.put("Russia", 58);
+	merge.put("Sri Lanka", 55);
+	merge.put("bhutan", 20);
+	
+	map.putAll(merge);
+	System.out.println("After merge the country will be: "+ map);
+	map.put("Nepal", 15);
+	int mergeSize = map.size();
+	System.out.println("new size of map: "+ mergeSize);
+	
+	// clearing the hashmap
+	merge.clear();
+	
+	System.out.println("Merge hashmap is clear: "+merge);
+	System.out.println(map);
 	
 	}
 
