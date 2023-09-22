@@ -10,7 +10,7 @@ public class HashMapDemo {
 	public static void main(String ar[]) {
 	HashMap<String, Integer> map = new HashMap<>();
 	
-	map.put("India", 150);
+	//map.put("India", 150);
 	map.put("USA", 50);
 	map.put("Indonesia", 10);
 	map.put("UK", 100);
