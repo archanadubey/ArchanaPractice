@@ -92,6 +92,33 @@ public class HashMapDemo {
 	System.out.println("Merge hashmap is clear: "+merge);
 	System.out.println(map);
 	
+	// create custom object in hashmap
+	/*To do that we need to have a class and its attributes which we need to pass in hashmap as a type like instead of
+	 * String we can pass the class name */
+	HashMap<Employee, Integer> employee = new HashMap<>();
+	// create the object of the employee class
+	
+	Employee emp1 = new Employee("Archana", 40);
+	Employee emp2 = new Employee("Bechara", 50);
+	
+	employee.put(emp1, 001);
+	employee.put(emp2, 002);
+	
+	
+	
+	
 	}
 
+}
+
+class Employee{
+	String name;
+	int age;
+	
+	public Employee(String name, int age) {
+		this.name = name;
+		this.age = age;
+		
+	}
+	
 }
