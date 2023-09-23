@@ -32,6 +32,45 @@ public class SingalyLinkedListD {
 			
 		}
 		
+		public void addLast(String data) {
+			
+			Node newNode = new Node(data);
+			
+			if(head == null) {
+				newNode = head;
+				return;
+				}
+			Node currtNode =head;
+			
+			while(currtNode.next != null) {
+				currtNode = currtNode.next;
+				
+			}
+			currtNode.next = newNode;
+		}
+		
+		// deleteFirst Node
+		
+		public void deleteFirst() {
+			if(head == null) {
+				System.out.println("list is empty");
+				return;
+				
+			}
+			head = head.next;
+			
+		}
+		
+		public void deleteLast() {
+			if(head == null) {
+				System.out.println("list is empty");
+				return;
+				
+				
+			}
+		
+		
+		
 		public void printList() {
 			
 			if (head == null) {
@@ -60,6 +99,8 @@ public class SingalyLinkedListD {
 		ll.addFirst("mata");
 		ll.addFirst("santoshi");
 		ll.addFirst("jai");
+		ll.printList();
+		ll.addLast("power");
 		ll.printList();
 
 
