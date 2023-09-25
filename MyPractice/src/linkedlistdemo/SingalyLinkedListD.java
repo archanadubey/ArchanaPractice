@@ -65,7 +65,14 @@ public class SingalyLinkedListD {
 			if(head == null) {
 				System.out.println("list is empty");
 				return;
+			}
+			Node secLastNode = head;
+			Node lastNode = head.next;
+			while(lastNode.next != null) {
+				lastNode = lastNode.next;
+				secLastNode = secLastNode.next;
 				
+			}
 				
 			}
 		
