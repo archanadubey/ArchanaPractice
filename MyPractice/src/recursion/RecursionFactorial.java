@@ -10,6 +10,7 @@ public class RecursionFactorial {
 		
 		// fabonacciSeries
 		int fn=10;
+		
 		fabonacciSeries(fn);
 		
 		// fabonnaciSeries using recursion 
