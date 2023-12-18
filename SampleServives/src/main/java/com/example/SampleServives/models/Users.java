@@ -2,15 +2,21 @@ package com.example.SampleServives.models;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+
+
 @Entity
-@Table(name = "Detail")
+//@Table(name = "Detail")
+@Table(name = "users")
 
 public class Users {
 	@Id
-	// private int id;
+	
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
 	private String firstName;
@@ -21,12 +27,10 @@ public class Users {
 	
 	private long phoneNumber;
 	
-//	public int getId() {
-//		return id;
-//	}
-//	public void setId(int id) {
-//		this.id = id;
-//	}
+	public Users() {
+		
+	}
+	
 	public String getFirstName() {
 		return firstName;
 	}

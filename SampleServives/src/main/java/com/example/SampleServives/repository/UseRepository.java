@@ -8,9 +8,11 @@ import org.springframework.stereotype.Repository;
 import com.example.SampleServives.models.Users;
 
 @Repository
-public interface UseRepository extends JpaRepository<Users, Integer>{
+public interface UseRepository extends JpaRepository<Users, Long>{
 	
-	 List <Users> findAll();
+	 List<Users> findAll();
 	//findByEmail(String email);
+
+	//Users findById(Long id);
 
 }

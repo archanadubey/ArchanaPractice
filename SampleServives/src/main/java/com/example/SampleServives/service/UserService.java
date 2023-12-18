@@ -1,6 +1,7 @@
 package com.example.SampleServives.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,7 @@ import com.example.SampleServives.repository.UseRepository;
 public class UserService {
 	
 	 private final UseRepository useRepository;
+	 
 
 	    public UserService(UseRepository useRepository) {
 	        this.useRepository = useRepository;
@@ -27,6 +29,13 @@ public class UserService {
 		public void saveUsers(Users users) {
 			useRepository.save(users);
 			
+		}
+
+
+
+		public Optional<Users> getUserById(Long id) {
+			
+			return this.useRepository.findById(id);
 		}
 		
 //		 public void saveUser(User user) {
