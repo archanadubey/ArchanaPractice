@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author archanadubey
- *
- */
-module MyPractice {
-}
