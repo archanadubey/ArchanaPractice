@@ -1,14 +1,15 @@
 package NareshIT.array;
 
+import java.util.List;
 import java.util.Scanner;
-
-
 
 public class FindMax {
 
 	public static void main(String[] args) {
 		
-		List<String> list = new ArrayList<>();
+		
+	//	List<String> l = new List<>();
+	//	
 		
 		Scanner sc = new Scanner(System.in);
 		
