@@ -9,7 +9,7 @@ public class RunnableFunctionalInterfaceUnderstanding {
             public void run() {
                 System.out.println("Hellow World from Annonimous Inner class");
                 System.out.println("We can write our code here by overriding the run method of runnable Interface");
-
+                System.out.println("hi .................");
             }
 
         };
